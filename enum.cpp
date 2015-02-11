@@ -25,7 +25,7 @@ int main()
 
         printf("\nGirilen sayi tektir.");
 
-    else if
+    else
 
         printf("\nGirilen sayi cifttir");
         
