@@ -24,11 +24,11 @@ int main()
                                       };
 
     for(i = 0; i<3; i++)
-  {
-      printf("Kayit no: %d\n", (i+1));
-      printf("Ad: %s\n", kisi[i].isim);
-      printf("Boy: %d\n", kisi[i].boy);
-      printf("Dogum tarihi: %d/%d/%d\n\n",kisi[i].tarih.gun, kisi[i].tarih.ay, kisi[i].tarih.yil);
-  }
+    {
+        printf("Kayit no: %d\n", (i+1));
+        printf("Ad: %s\n", kisi[i].isim);
+        printf("Boy: %d\n", kisi[i].boy);
+        printf("Dogum tarihi: %d/%d/%d\n\n",kisi[i].tarih.gun, kisi[i].tarih.ay, kisi[i].tarih.yil);
+    }
     return 0;
 }
