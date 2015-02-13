@@ -31,7 +31,6 @@ int main()
         
     return 0;
 }
-
 int tek (int n)
 {
     return ( n % 2);
