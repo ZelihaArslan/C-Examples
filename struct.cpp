@@ -18,9 +18,9 @@ int main()
         struct dogum_tarihi tarih;
     };
 
-    struct sahis_bilgileri kisi[3] = {"Ebru", 165,{13, 2, 1993},
-                                      "Emre", 178, {14, 4, 1998},
-                                      "Bekir", 176, {4, 11, 1983}
+    struct sahis_bilgileri kisi[3] = {"Ebru", 165, {13, 02, 1993},
+                                      "Emre", 178, {14, 04, 1998},
+                                      "Bekir",176, {04, 11, 1983}
                                       };
 
     for(i = 0; i<3; i++)
