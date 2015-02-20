@@ -1,4 +1,4 @@
-#Girilen cümledeki Büyük harfleri kucuk harfe kucuk harfleri büyüğe çevirir.
+/*Girilen cümledeki Büyük harfleri kucuk harfe kucuk harfleri büyüğe çevirir.*/
 #include <stdio.h>
 
 int main ()
