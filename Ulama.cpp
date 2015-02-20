@@ -7,7 +7,7 @@ int main()
     char cumle[200];
     int kontrol = 0;
     printf("Ulama icin bir cumle giriniz\n");
-    char sessiz[42]="BCÇDFGĞHJKLMNPRSŞTVYZbcçdfgğhjklmnprsştvyz";
+    char sessiz[43]="BCÇDFGĞHJKLMNPRSŞTVYZbcçdfgğhjklmnprsştvyz";
     gets(cumle);
 
     for(i = 0; cumle[i] != '\0'; i++ )
