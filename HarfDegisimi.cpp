@@ -1,11 +1,12 @@
+#Girilen cümledeki Büyük harfleri kucuk harfe kucuk harfleri büyüğe çevirir.
 #include <stdio.h>
 
 int main ()
 {
-
+    int i=0, k =0;
     char buyuk[]="ABCÇDEFGĞHIİJKLMNOÖPRSŞTUÜVYZXQW";
     char kucuk[]="abcçdefgğhıijklmnoöprsştuüvyzxqw";
-    int i=0, k =0;
+    
     char cumle[200];
     gets(cumle);
 
@@ -17,13 +18,11 @@ int main ()
             {
                 cumle[i]=kucuk[k];
             }
-
             else if(cumle[i] == kucuk[k])
             {
                 cumle[i]=buyuk[k];
             }
         }
-
     }
 
     printf("%s", cumle);
