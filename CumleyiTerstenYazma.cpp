@@ -6,7 +6,7 @@ int main ()
     gets(cumle);
     int i;
 
-    for(i = strlen(cumle); i >= 0; i--)
+    for(i = strlen(cumle)-1; i >= 0; i--)
     {
         printf("%c", cumle[i]);
     }
