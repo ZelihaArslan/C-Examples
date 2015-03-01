@@ -9,11 +9,7 @@ int main()
 
     printf("Bir cumle giriniz\n"),
     gets(cumle);
-    while(cumle[s] != '\0')
-    {
-        s++;
-        a++;
-    }
+    s = strlen(cumle);
 
     for(i=0; i < s; i++)
     {
