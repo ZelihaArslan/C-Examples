@@ -28,7 +28,7 @@ int main()
                 }
             }
             if(cumle[i] != ' ')
-                printf("%c hafinden %d tane var\n", cumle[i], harfSay[i]+1);
+                printf("%c harfinden %d tane var\n", cumle[i], harfSay[i]+1);
        }
     }
 
