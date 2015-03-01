@@ -5,7 +5,7 @@ int main()
 {
     char cumle[100];
     int harfSay[100]={0};
-    int i,k,m,s=1,a=1;
+    int i,k,m,s=0,a=0;
 
     printf("Bir cumle giriniz\n"),
     gets(cumle);
