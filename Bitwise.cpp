@@ -23,7 +23,7 @@ unsigned short int max(unsigned short int a)
     lo = a & 0x00FF;
     hi=a>>8;
 
-    m=(lo>hi) ? lo:hi;
+    m=(lo>hi) ? lo:hi;//Karşılaştırma işlemi doğruysa lo yanlışsa hi döner.
     return m;
 
 }
