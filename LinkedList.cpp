@@ -3,7 +3,7 @@
 #include <conio.h>
 #include <string.h>
 
-struct isimler{                 //Liste için struct yapı oluşturuyoruz ve kendi içerisinde çağırıyoruz. *sonraki diğer 
+struct isimler{                 //Liste için struct yapı oluşturuyoruz ve kendi içerisinde çağırıyoruz. *sonraki 
                                 //listenin diğer elemanını oluşturmamız için.
     int no;
     char isim[20];
@@ -17,7 +17,7 @@ silme(isimler **);
 int main()
 {
     isimler *head;                 //Liste başını kaybetmememiz gerekli. Bu nedenle bir pointer'a atıyoruz.
-                                  //Artık bundan sonraki göster sil ekle işlemlerimizi head ile yapacağız.
+                                  //Bundan sonraki göster sil ekle işlemlerimizi head ile yapacağız.
     head=olusturma();
     char sec;
 	do{
