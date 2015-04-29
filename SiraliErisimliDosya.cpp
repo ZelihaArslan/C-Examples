@@ -16,6 +16,7 @@ Listeleme();
 KayitSilme();
 KayitArama();
 KayitDegistir();
+degistir(char *, int);
 int main()
 {
     FILE *dosya, *yedek;
@@ -27,11 +28,13 @@ int main()
 
     ogrenci kisi;
     int durum = 0;
+    char isim[10];
+    int nott;
 
     do
     {
         system("cls");
-        printf("Menu\n1- Kayit Giris\n2- Kayit Listeleme\n3- Kayit Silme\n4- Kayit Arama\n5- Kayit Degistirme\n6- Cikis \n");
+        printf("Menu\n1- Kayit Giris\n2- Kayit Listeleme\n3- Kayit Silme\n4- Kayit Arama\n5- Kayit Degistirme\n6- Cikis\n7- Isme gore degistir");
         switch(getch())
         {
             case '1':
@@ -52,6 +55,15 @@ int main()
             case '6':
                 printf("Cikis yapiliyor...");
                 return 0;
+                break;
+            case '7':
+                printf("\nIsim girin\n");
+                scanf("%s",&isim);
+                printf("Not girin");
+                scanf("%d",&nott);
+
+                getch();
+                degistir(isim,nott);
                 break;
             default:
                 printf("Hatali bir secim yaptiniz");
@@ -213,5 +225,43 @@ KayitDegistir()
     }
     fflush(stdin);
     getch();
-    getch();
+}
+degistir(char *isim,int nott)
+{
+    int karsilastirma;
+    dosya = fopen("bilgiler.txt","r");
+    yedek = fopen("yedek.txt","w");
+    if(!dosya) printf("Dosya acilamadi");
+    while(!feof(dosya))
+    {
+        fscanf(dosya,"%d %s %d\n", &kisi.no, kisi.ad, &kisi.Not);
+        karsilastirma = strcmp(kisi.ad, isim);
+        printf("%d",karsilastirma);
+        if(karsilastirma !=0)
+        {
+            fprintf(yedek,"%d %s %d\n", kisi.no, kisi.ad, kisi.Not);
+        }
+        else if(karsilastirma == 0)
+        {
+
+            fprintf(yedek,"%d %s %d\n", kisi.no, kisi.ad, nott);
+            durum = 1;
+        }
+    }
+        fclose(dosya);
+        fclose(yedek);
+        if(durum == 1)
+        {
+            printf("Degisiklikler yapildi\n");
+            remove("bilgiler.txt");
+        rename("yedek.txt","bilgiler.txt");
+            printf("Islem tamam\n");
+        }
+        else
+        {
+            printf("Isim bulunamadi\n");
+            remove("yedek.txt");
+        }
+        fflush(stdin);
+        getch();
 }
