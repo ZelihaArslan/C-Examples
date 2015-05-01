@@ -50,7 +50,7 @@ void sirala(int bilgiler[5][2])
        {
            if(bilgiler[i][1] > bilgiler[j][1])
            {
-                gecici[0][0] = bilgiler[i][0];
+                gecici[0][0] = bilgiler[i][0];    //Dizinin herbir boyutunu teker teker atmamız gerekiyor.//
                 gecici[0][1] = bilgiler[i][1];
                 bilgiler[i][0] = bilgiler[j][0];
                 bilgiler[i][1] = bilgiler[j][1];
