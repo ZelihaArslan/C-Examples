@@ -1,5 +1,5 @@
 //5 tane öğrencinin No ve Puan bilgilerini klavyeden alır//
-//ve bunları, puanlarını küçükten büyüğe selection sort kullanarak sıralar//
+//ve bunları puanlarını küçükten büyüğe selection sort kullanarak sıralar//
 
 #include <stdio.h>
 #include <stdlib.h>
