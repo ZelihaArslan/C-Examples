@@ -34,9 +34,9 @@ void sirala(int sayilar[])
                 sayilar[j]=sayilar[j+1];
                 sayilar[j+1] = gecici;
             }
-            goster(sayilar);
-            getch();
         }
+         goster(sayilar);
+         getch();
     }
 }
 void goster(int sayilar[])
