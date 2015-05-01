@@ -23,7 +23,7 @@ int main()
         printf("%d. sayi: ", i+1);
         scanf("%d", &dizi[i]);
     }
-    printf("%\n");
+    printf("\n");
     for(i=0; i<15; i++)          //İki diziyi birleştiriyoruz//
     {
         if(i<10)
