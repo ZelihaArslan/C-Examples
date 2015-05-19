@@ -9,8 +9,10 @@ FILE *dosya, *yedek;
     }ogrenci;
 
     ogrenci kisi;
-    int no, durum;
-
+    int no, durum = 0;
+    int nott;
+    char isim[10];
+    
 KayitGiris();
 Listeleme();
 KayitSilme();
@@ -19,18 +21,7 @@ KayitDegistir();
 degistir(char *, int);
 int main()
 {
-    FILE *dosya, *yedek;
-    typedef struct
-    {
-        char ad[10];
-        int no, Not;
-    }ogrenci;
-
-    ogrenci kisi;
-    int durum = 0;
-    char isim[10];
-    int nott;
-
+    
     do
     {
         system("cls");
