@@ -20,12 +20,6 @@ int main()
     display(head);
     node_remove(&head);
     display(head);
-    node_remove(&head);
-    display(head);
-    node_remove(&head);
-    display(head);
-    node_remove(&head);
-    display(head);
 }
 node *creatingList()
 {
